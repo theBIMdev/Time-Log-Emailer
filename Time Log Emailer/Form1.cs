@@ -211,12 +211,12 @@ namespace Time_Log_Emailer
             {
                 txtBox_email.Enabled = false;
                 txtBox_pw.Enabled = false;
+                chkBox_saveInfo.Enabled = false;
                 btn_login.Text = "Unlock";
                 this.Text = txtBox_email.Text;
                 btn_checkin.Enabled = true;
                 btn_lunch.Enabled = true;
                 btn_checkout.Enabled = true;
-                chkBox_saveInfo.Enabled = true;
 
                 try
                 {
@@ -239,13 +239,13 @@ namespace Time_Log_Emailer
             {
                 txtBox_email.Enabled = true;
                 txtBox_pw.Enabled = true;
+                chkBox_saveInfo.Enabled = true;
                 if (chkBox_saveInfo.Checked == false) { txtBox_pw.Text = ""; }
                 btn_login.Text = "Lock In";
                 this.Text = "Enter email info";
                 btn_checkin.Enabled = false;
                 btn_lunch.Enabled = false;
                 btn_checkout.Enabled = false;
-                chkBox_saveInfo.Enabled = false;
             }
         }
     }
